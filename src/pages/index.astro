@@ -1,4 +1,5 @@
 ---
+import ChargeSection from "../components/ChargeSection.astro";
 import HeroSection from "../components/HeroSection.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 import Layout from "../layouts/Layout.astro";
@@ -8,12 +9,12 @@ import Layout from "../layouts/Layout.astro";
   <LandingHeader />
 
   <main
-    class="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden scrollbar-thin"
+    class="snap-y snap-mandatory relative w-full h-screen overflow-auto overflow-x-hidden scrollbar-thin scroll-smooth"
   >
     <div class="snap-center">
       <HeroSection />
     </div>
-    <div class="snap-center">
+    <!-- <div class="snap-center">
       <HeroSection />
     </div>
     <div class="snap-center">
@@ -21,9 +22,10 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <div class="snap-center">
       <HeroSection />
-    </div>
+    </div> -->
     <div class="snap-center">
-      <HeroSection />
+      <ChargeSection />
     </div>
+
   </main>
 </Layout>
