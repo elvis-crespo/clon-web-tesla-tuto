@@ -2,6 +2,7 @@
 import ChargeSection from "../components/ChargeSection.astro";
 import HeroSection from "../components/HeroSection.astro";
 import LandingHeader from "../components/LandingHeader.astro";
+import Section from "../components/Section.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -14,18 +15,34 @@ import Layout from "../layouts/Layout.astro";
     <div class="snap-center">
       <HeroSection />
     </div>
-    <!-- <div class="snap-center">
-      <HeroSection />
-    </div>
+
     <div class="snap-center">
-      <HeroSection />
+      <Section
+        color="white"
+        title="Disfrute de Tesla"
+        subtitle="Concertar una prueba de conducción"
+      >
+        <video
+          slot="background"
+          class="object-center object-cover h-full w-full"
+          autoplay
+          muted
+          loop
+          src="/public_video.webm"></video>
+
+        <div slot="footer">
+          <a
+            href="#"
+            class={`border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm text-white
+              rounded font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors`}
+            >Prueba de conducción</a
+          >
+        </div>
+      </Section>
     </div>
-    <div class="snap-center">
-      <HeroSection />
-    </div> -->
+
     <div class="snap-center">
       <ChargeSection />
     </div>
-
   </main>
 </Layout>
